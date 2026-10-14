@@ -61,6 +61,20 @@ python -m flask --app app run --host 0.0.0.0 --port 5000
 
 Then open `http://127.0.0.1:5000` in a normal local browser. In Codex’s in-app browser, use the host address shown by the Flask server instead of `127.0.0.1`.
 
+## Run the training notebook in VS Code
+
+The project includes a VS Code launch profile and interpreter setting. When VS Code asks you to select a notebook kernel, choose **Python Environments…** and then select **Python 3.11 (Book Recommender)** (the `.venv` environment in this project).
+
+To run `book-recommender-system.ipynb` end to end, download the Kaggle dataset and place these files beside the notebook:
+
+```text
+books.csv
+users.csv
+ratings.csv
+```
+
+The web app itself does not need these files because it loads the prepared `.pkl` model artifacts already included in the repository.
+
 ## Deployment note
 
 `Procfile` contains `web: gunicorn app:app` for Linux hosting platforms. `gunicorn` is not used for Windows local development; use Flask as shown above.

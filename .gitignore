@@ -3,3 +3,5 @@
 .venv-py311/
 __pycache__/
 *.log
+# Raw Kaggle training data is downloaded locally for the notebook.
+*.csv

@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Book Recommender",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "flask",
+      "env": {
+        "FLASK_APP": "app"
+      },
+      "args": [
+        "run",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "5000"
+      ],
+      "jinja": true,
+      "justMyCode": true
+    }
+  ]
+}

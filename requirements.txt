@@ -3,4 +3,7 @@ flask
 # Keep these compatible versions so they can be loaded reliably.
 numpy==1.26.4
 pandas==1.5.3
+scikit-learn
 gunicorn
+# Lets VS Code run the training notebook with the same project environment.
+ipykernel
